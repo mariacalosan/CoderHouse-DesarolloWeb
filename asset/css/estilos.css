@@ -1,0 +1,123 @@
+/*Agregando estilos al body*/
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2.5px;
+  text-transform: capitalize;
+}
+/*agregando estilos al header*/
+header{
+  background-color: #faf0e5;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*agregando estilos al titulo*/
+.header_titulo{
+  text-align: center;
+  margin-left: 10px;
+}
+/*agregando estilos al nav*/
+nav{
+  display: flex;
+}
+/*agregando estilos a la lista desordenada*/
+.nav_lista{
+  height: auto;
+  display: flex;
+  list-style: none;
+}
+/*agrgando estilos a los items de la lista*/
+.nav_items{
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+/*agregando estilos a la imagen de la lista*/
+.nav_items--img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+/*quitandole los estilos a la etiqueta a*/
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+/*agregando estilos a la seccion de las imagenes*/
+.main_section{
+  width: 100%;
+  height: 300px;
+  display: inline-flex;
+}
+/*agregando estilos a las imagenes de el main*/
+.section_img{
+  display:block;
+  width: 20%;
+  height: 300px;
+}
+/*agregando estilos al subtitulo*/
+.main_h2{
+  align-items: center;
+  /* display: flex; */
+  flex-direction: column;
+  /* width: 20px; */
+  text-align: center;
+  font-size: 30px;
+  height: 70px;
+  padding-top: 20px;
+}
+/*agregando estilos a la seccion que contine los productos*/
+.main_section--sectiondos{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/*agregando estilos a los articulos*/
+.section_articulos{
+  background-color: #faf0e5;
+  display: inline-table;
+  width: 22%;
+  height: 70%;
+  border-radius: 10px;
+}
+/*agregando estilos a las imagenes de el producto*/
+.article_img{
+  height: 300px;
+  margin: 30px;
+  padding-top: 60px;
+  border-radius: 10px;
+}
+/*agregando estilos a el footer*/
+footer{
+  width:100%;
+  height: 110px;
+  position:absolute;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  font-size: 14px;
+  background-color: #faf0e5;
+}
+.footer_h3{
+  margin-left: 10px;
+}
+.footer_div{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.footer_div--img{
+  width: 30px;
+  margin-left: 8px;
+}
