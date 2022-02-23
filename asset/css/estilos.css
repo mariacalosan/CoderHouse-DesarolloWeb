@@ -227,3 +227,31 @@ footer {
   height: 30px;
   border-radius: 8px;
 }
+/*SECCION DE ESTILOS PARA LA PAGINA DE CARRITO*/
+.main--carrito {
+  background-color: #faf0e5;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+.main_section--carrito{
+  display: grid;
+  justify-content: center;
+}
+.main_img--carrito{
+  margin: 40px;
+  /* display: flex; */
+  /* align-items: center; */
+  width: 20%;
+  border-radius: 10px;
+}
+.form_carrito{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 60px;
+}
+.form_h2--carrito{
+  margin-right: 20px;
+}

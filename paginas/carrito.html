@@ -1,74 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>carrito de compras</title>
-</head>
-<body>
-  <header>
-    <h1>Marialipstick</h1>
-    <nav>
-      <ul class="nav">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="">New</a>
-        </li>
-        <li>
-          <a href="contacto.html">Contactenos</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/estilos.css" />
+    <link rel="shortcut icon" href="../asset/iconos/letra.png" />
+    <title>carrito de compras</title>
+  </head>
 
-  <main>
-    <img src="../asset/imagenes/labiosfondogris.jpg" alt="">
-    <img src="../asset/imagenes/labiosfondogris.jpg" alt="">
-    <img src="../asset/imagenes/labiosfondogris.jpg" alt="">
-    <form action="">
-      <h2>precio</h2>
-      <h4>Cantidad
-        <input type="number">
-      </h4>
-      <h2>total</h2>
-    </form>
-  </main>
+  <body>
+    <header>
+      <h1 class="header_titulo">Marialipstick</h1>
+      <nav>
+        <ul class="nav_lista">
+          <li class="nav_items">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav_items">
+            <a href="contacto.html">Contactenos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <footer>
-    <h1>amamos ser parte de tu coleccion</h1>
-    <div>facebook</div>
-    <div>instagram</div>
-    <div>tiktok</div>
-  </footer>
-</body>
+    <main class="main--carrito">
+      <section class="main_section--carrito">
+        <img src="../asset/imagenes/new4.jpg" alt="" class="main_img--carrito"/>
+      <img src="../asset/imagenes/new3.jpg" alt="" class="main_img--carrito"/>
+      <img src="../asset/imagenes/new2.jpg" alt="" class="main_img--carrito"/>
+      </section>
+
+      <form action="" class="form_carrito">
+        <h3 class="form_h2--carrito">precio</h3>
+        <h3 class="form_h2--carrito">
+          Cantidad
+          <input type="number" />
+        </h3>
+        <h3 class="form_h2--carrito">total</h3>
+      </form>
+    </main>
+
+    <footer>
+      <h3 class="footer_h3">Marylipstick</h3>
+      <div class="footer_div">
+        <img
+          src="../asset/iconos/facebook.png"
+          alt="facebook"
+          class="footer_div--img"
+        />
+
+        <img
+          src="../asset/iconos/instagram.png"
+          alt="instagram"
+          class="footer_div--img"
+        />
+
+        <img
+          src="../asset/iconos/tiktok.png"
+          alt="tiktok"
+          class="footer_div--img"
+        />
+      </div>
+    </footer>
+  </body>
 </html>
-<style>
-  header {
-    background-color: pink;
-  }
-  header nav {
-    display: flex;
-  }
-  .carrito {
-    width: 20px;
-    height: 20px;
-  }
-  a {
-    text-decoration: none;
-  }
-  nav .nav a {
-    margin-right: 10px;
-  }
-  main {
-    background-color: aquamarine;
-  }
-  section {
-    background-color: blanchedalmond;
-  }
-  footer {
-    background-color: yellowgreen;
-  }
-</style>
+
