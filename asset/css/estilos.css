@@ -1,10 +1,10 @@
 /*agregando el reseteo para mis paginas*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
 /*Agregando estilos al body*/
-body{
+body {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -13,7 +13,7 @@ body{
   text-transform: capitalize;
 }
 /*agregando estilos al header*/
-header{
+header {
   background-color: #faf0e5;
   width: 100%;
   height: 60px;
@@ -22,52 +22,52 @@ header{
   align-items: center;
 }
 /*agregando estilos al titulo*/
-.header_titulo{
+.header_titulo {
   text-align: center;
   margin-left: 10px;
 }
 /*agregando estilos al nav*/
-nav{
+nav {
   display: flex;
 }
 /*agregando estilos a la lista desordenada*/
-.nav_lista{
+.nav_lista {
   height: auto;
   display: flex;
   list-style: none;
 }
 /*agrgando estilos a los items de la lista*/
-.nav_items{
+.nav_items {
   display: flex;
   justify-content: center;
   margin-right: 10px;
 }
 /*agregando estilos a la imagen de la lista*/
-.nav_items--img{
+.nav_items--img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
 /*quitandole los estilos a la etiqueta a*/
-a{
+a {
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
 /*agregando estilos a la seccion de las imagenes*/
-.main_section{
+.main_section {
   width: 100%;
   height: 300px;
   display: inline-flex;
 }
 /*agregando estilos a las imagenes de el main*/
-.section_img{
-  display:block;
+.section_img {
+  display: block;
   width: 20%;
   height: 300px;
 }
 /*agregando estilos al subtitulo*/
-.main_h2{
+.main_h2 {
   align-items: center;
   /* display: flex; */
   flex-direction: column;
@@ -78,7 +78,7 @@ a{
   padding-top: 20px;
 }
 /*agregando estilos a la seccion que contine los productos*/
-.main_section--sectiondos{
+.main_section--sectiondos {
   width: 100%;
   /*height: 700px;*/
   display: flex;
@@ -88,7 +88,7 @@ a{
   flex-wrap: wrap;
 }
 /*agregando estilos a los articulos*/
-.section_articulos{
+.section_articulos {
   background-color: #faf0e5;
   display: inline-table;
   width: 22%;
@@ -97,39 +97,39 @@ a{
   margin-bottom: 40px;
 }
 /*agregando estilos a las imagenes de el producto*/
-.article_img{
+.article_img {
   height: 300px;
   margin: 30px;
   /*padding-top: 60px;*/
   border-radius: 10px;
 }
 /*agregando estilos a el footer*/
-footer{
-  width:100%;
+footer {
+  width: 100%;
   height: 110px;
-  position:absolute;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   font-size: 14px;
   background-color: #faf0e5;
   margin-top: 40px;
 }
-.footer_h3{
+.footer_h3 {
   margin-left: 10px;
 }
-.footer_div{
+.footer_div {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-end;
   padding-right: 10px;
 }
-.footer_div--img{
+.footer_div--img {
   width: 30px;
   margin-left: 8px;
 }
 /*SECCION ESTILOS PARA LA PAGINA DE PRODUCTOS*/
-.section_productos{
+.section_productos {
   width: 100%;
   /*height: 700px;*/
   display: flex;
@@ -138,7 +138,7 @@ footer{
   flex-wrap: wrap;
   justify-content: center;
 }
-.section_articulos--productos{
+.section_articulos--productos {
   background-color: #faf0e5;
   display: inline-table;
   width: 22%;
@@ -148,47 +148,82 @@ footer{
   margin-inline: auto;
   /*margin-right: 20px;*/
 }
-.article_img--producto{
+.article_img--producto {
   height: 300px;
   margin: 30px;
   /*padding-top: 60px;*/
   border-radius: 10px;
 }
 /*SECCION DE ESTILOS PARA LA PAGINA DE CONTACTENOS*/
-.main--contactos{
+.main--contactos {
   background-color: #faf0e5;
   display: flex;
   margin: 40px;
   margin-top: 60px;
   border-radius: 10px;
 }
-.main_img--contactos{
+.main_img--contactos {
   margin: 20px;
   border-radius: 10px;
 }
-.main_form{
+.main_form {
   margin: 60px;
   display: grid;
   align-content: center;
 }
-.form_h3{
+.form_h3 {
   margin-bottom: 10px;
   font-size: 13px;
 }
-.form_input{
+.form_input {
   display: block;
   width: 100%;
 }
-.form_input--mensaje{
+.form_input--mensaje {
   height: 300%;
   width: 100%;
   display: block;
 }
-.div_boton{
+.div_boton {
   display: flex;
   justify-content: center;
   margin-top: 35%;
 }
-.form_boton{
+.form_boton {
   width: 100px;
+}
+/*SECCION DE ESTILOS PARA LA PAGINA DE DETALLES*/
+.main--detalles {
+  background-color: #faf0e5;
+  display: flex;
+  margin: 40px;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+.main_img--detalles {
+  margin: 30px;
+  border-radius: 10px;
+}
+.main_section--detalles {
+  display: block;
+  margin: 60px;
+}
+.section_h2--detalles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.section_p {
+  margin-bottom: 90px;
+}
+.article_detalles {
+  display: flex;
+  justify-content: center;
+}
+.article_boton--detalles {
+  width: 30%;
+  height: 30px;
+  border-radius: 8px;
 }
