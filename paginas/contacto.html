@@ -4,28 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/estilos.css" />
+    <link rel="shortcut icon" href="../asset/iconos/letra.png">
     <title>Contactanos</title>
   </head>
   <body>
     <header>
-      <h1>Marialipstick</h1>
+      <h1 class="header_titulo">Marialipstick</h1>
       <nav>
-        <ul class="nav">
-          <li>
+        <ul class="nav_lista">
+          <li class="nav_items">
             <a href="index.html">Home</a>
           </li>
-          <li>
+          <li class="nav_items">
             <a href="">New</a>
           </li>
-          <li>
+          <li class="nav_items">
             <a href="producto.html">Productos</a>
           </li>
-          <li>
+          <li class="nav_items">
             <a href="carrito.html">
               <img
                 src="../asset/iconos/carrito.png"
                 alt="carrito"
-                class="carrito"
+                class="nav_items--img"
               />
             </a>
           </li>
@@ -33,50 +35,37 @@
       </nav>
     </header>
 
-    <main>
-      <img src="../asset/imagenes/labiosfondogris.jpg" alt="labios" />
-      <form action="" method="post">
-        <h3>
+    <main class="main--contactos">
+      <img src="../asset/imagenes/fondo2.jpg" alt="labios" class="main_img--contactos"/>
+      <form action="" method="post" class="main_form">
+        <h3 class="form_h3">
           tu nombre
-          <input type="text" name="nombre" size="20"><br />
+          <input type="text" name="nombre" size="20" class="form_input"><br />
         </h3>
-        <h3>
+        <h3 class="form_h3">
           corre electronico
-          <input type="text" name="email" size="20"><br />
+          <input type="text" name="email" size="20" class="form_input"><br />
         </h3>
-        <h3>
+        <h3 class="form_h3">
           mensaje
-          <input type="text" name="mensaje" size="100"><br />
+          <input type="text" name="mensaje" size="100" class="form_input--mensaje"><br />
         </h3>
-        <input type="submit" value="Enviar"></form>
+        <div class="div_boton">
+          <input type="submit" value="Enviar" class="form_boton"></form>
+        </div>
       </form>
     </main>
+
+    <footer>
+      <h3 class="footer_h3">Marylipstick</h3>
+      <div class="footer_div">
+        <img src="../asset/iconos/facebook.png" alt="facebook" class="footer_div--img"/>
+
+        <img src="../asset/iconos/instagram.png" alt="instagram" class="footer_div--img"/>
+
+        <img src="../asset/iconos/tiktok.png" alt="tiktok" class="footer_div--img"/>
+      </div>
+    </footer>
   </body>
 </html>
-<style>
-  header {
-    background-color: pink;
-  }
-  header nav {
-    display: flex;
-  }
-  .carrito {
-    width: 20px;
-    height: 20px;
-  }
-  a {
-    text-decoration: none;
-  }
-  nav .nav a {
-    margin-right: 10px;
-  }
-  main {
-    background-color: aquamarine;
-  }
-  form {
-    background-color: cadetblue;
-  }
-  footer {
-    background-color: yellowgreen;
-  }
-</style>
+
