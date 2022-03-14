@@ -1,10 +1,11 @@
 /*agregando el reseteo para mis paginas*/
-* {
+*{
   margin: 0;
   padding: 0;
 }
 /*Agregando estilos al body*/
 body {
+  display: grid;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -16,7 +17,6 @@ body {
 header {
   background-color: #faf0e5;
   width: 100%;
-  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,18 +29,22 @@ header {
 /*agregando estilos al nav*/
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-/*agregando estilos a la lista desordenada*/
-.nav_lista {
-  height: auto;
-  display: flex;
-  list-style: none;
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
-/*agrgando estilos a los items de la lista*/
-.nav_items {
-  display: flex;
-  justify-content: center;
-  margin-right: 10px;
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0  5px;
 }
 /*agregando estilos a la imagen de la lista*/
 .nav_items--img {
@@ -48,23 +52,32 @@ nav {
   height: 20px;
   margin-right: 10px;
 }
-/*quitandole los estilos a la etiqueta a*/
-a {
-  text-decoration: none;
-  color: black;
+.nav_label{
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
   cursor: pointer;
+  display: none;
+}
+li a.active, li a:hover{
+  color: blueviolet;
+  transition:  .5s;
+}
+
+#check{
+  display: none;
 }
 /*agregando estilos a la seccion de las imagenes*/
 .main_section {
   width: 100%;
-  height: 300px;
   display: inline-flex;
 }
 /*agregando estilos a las imagenes de el main*/
 .section_img {
   display: block;
   width: 20%;
-  height: 300px;
+  /*height: 300px;*/
 }
 /*agregando estilos al subtitulo*/
 .main_h2 {
@@ -84,7 +97,7 @@ a {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 /*agregando estilos a los articulos*/
@@ -107,7 +120,6 @@ a {
 footer {
   width: 100%;
   height: 110px;
-  position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -255,3 +267,57 @@ footer {
 .form_h2--carrito{
   margin-right: 20px;
 }
+
+/* responsive*/
+@media  (max-width:952px){
+  a{
+    padding-left: 20px;
+
+  }
+  .header_titulo{
+    margin-left: 20px;
+  }
+  nav ul li a{
+    font-size: 10px;
+  }
+}
+@media (max-width:858px) {
+  .nav_label{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: hotpink;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition:  all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  li a:hover li a.active{
+    background: none;
+    color: rgb(160, 220, 111);
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+/*@media (max-width:1000px){
+  main{
+    width: 100%;
+  }
+  .main_section--sectiondos{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+  }
+}*/
