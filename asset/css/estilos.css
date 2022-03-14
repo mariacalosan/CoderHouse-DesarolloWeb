@@ -15,7 +15,7 @@ body {
 }
 /*agregando estilos al header*/
 header {
-  background-color: #faf0e5;
+  background-color: #cfecec;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -38,6 +38,7 @@ a {
   cursor: pointer;
 }
 nav ul{
+  /*position: relative;*/
   float: right;
   margin-right: 20px;
 }
@@ -70,14 +71,81 @@ li a.active, li a:hover{
 }
 /*agregando estilos a la seccion de las imagenes*/
 .main_section {
+  margin: auto;
+  background-color: #f1fdfd;
   width: 100%;
+  padding: 30px;
   display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section_div--slider{
+  display: flex;
+}
+section ul{
+  display: flex;
+  flex-wrap: nowrap;
+}
+section ul li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*carrusel de imagenes*/
+.section_ul--slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+}
+.section_ul--slider li{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .5s;
+}
+.section_ul--slider li:first-child{
+  opacity: 1;
+}
+.section_ul--slider li:target{
+  opacity: 1;
+}
+div{
+  display: flex;
+  justify-content: center;
+}
+.menu--slider{
+  text-align: center;
+  margin: 20px;
+}
+.menu--slider li{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: center;
+}
+.menu--slider li a{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 100%;
 }
 /*agregando estilos a las imagenes de el main*/
 .section_img {
-  display: block;
-  width: 20%;
-  /*height: 300px;*/
+  height: 90%;
+  width: 100%;
+  margin: 20px;
+  object-fit: contain;
+  text-align: center;
 }
 /*agregando estilos al subtitulo*/
 .main_h2 {
@@ -102,9 +170,9 @@ li a.active, li a:hover{
 }
 /*agregando estilos a los articulos*/
 .section_articulos {
-  background-color: #faf0e5;
+  background-color: #cfecec;
   display: inline-table;
-  width: 22%;
+  /*width: 22%;*/
   height: 70%;
   border-radius: 10px;
   margin-bottom: 40px;
@@ -124,7 +192,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   font-size: 14px;
-  background-color: #faf0e5;
+  background-color: #cfecec;
   margin-top: 40px;
 }
 .footer_h3 {
@@ -151,8 +219,9 @@ footer {
   justify-content: center;
 }
 .section_articulos--productos {
-  background-color: #faf0e5;
+  background-color: #cfecec;
   display: inline-table;
+
   width: 22%;
   height: 70%;
   border-radius: 10px;
@@ -168,7 +237,7 @@ footer {
 }
 /*SECCION DE ESTILOS PARA LA PAGINA DE CONTACTENOS*/
 .main--contactos {
-  background-color: #faf0e5;
+  background-color: #cfecec;
   display: flex;
   margin: 40px;
   margin-top: 60px;
@@ -206,7 +275,7 @@ footer {
 }
 /*SECCION DE ESTILOS PARA LA PAGINA DE DETALLES*/
 .main--detalles {
-  background-color: #faf0e5;
+  background-color: #cfecec;
   display: flex;
   margin: 40px;
   margin-top: 60px;
@@ -241,7 +310,7 @@ footer {
 }
 /*SECCION DE ESTILOS PARA LA PAGINA DE CARRITO*/
 .main--carrito {
-  background-color: #faf0e5;
+  background-color: #cfecec;
   display: flex;
   flex-wrap: wrap;
   margin: 40px;
