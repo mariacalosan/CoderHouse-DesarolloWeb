@@ -1,6 +1,10 @@
 .bg-light-blue {
   background-color: #f1fdfd;
 }
-.bg-blue{
+.bg-blue {
   background-color: #cfecec;
+}
+.arrow-button {
+  border: 1px solid white;
+  background-color: #52bdbd;
 }

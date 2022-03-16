@@ -55,62 +55,39 @@
 
     <main class="container-fluid">
       <section class="row justify-content-center bg-light-blue">
-        <ul class="section_ul--slider">
-          <li id="slider1">
+        <div class=" carousel slide carousel-fade" id="carouselInicio" data-bs-ride="carousel">
+        <ul class="carousel-inner">
+          <li class="carousel-item active mt-5">
             <img
               src="./asset/imagenes/fondo2.jpg"
               alt="labial2"
-              class="img-fluid"
+              class="d-block mx-auto img-thumbnail mt-4"
             />
           </li>
-          <li id="slider2">
+          <li class="carousel-item mt-5">
             <img
               src="./asset/imagenes/fondo1.jpg"
               alt="labial2"
-              class="img-fluid"
+              class="mx-auto d-block img-thumbnail mt-4"
             />
           </li>
-          <li id="slider3">
-            <img
-              src="./asset/imagenes/fondo5.jpg"
-              alt="labial2"
-              class="img-fluid"
-            />
-          </li>
-          <li id="slider4">
-            <img
-              src="./asset/imagenes/fondo.jpg"
-              alt="labial2"
-              class="img-fluid"
-            />
-          </li>
-          <li id="slider5">
+          <li class="carousel-item mt-5">
             <img
               src="./asset/imagenes/fondo6.jpg"
               alt="labial2"
-              class="img-fluid"
+              class="mx-auto d-block img-thumbnail mt-4"
             />
           </li>
         </ul>
-        <div class="div_carrusel">
-          <ul class="menu--slider">
-            <li>
-              <a href="#slider1">1</a>
-            </li>
-            <li>
-              <a href="#slider2">2</a>
-            </li>
-            <li>
-              <a href="#slider3">3</a>
-            </li>
-            <li>
-              <a href="#slider4">4</a>
-            </li>
-            <li>
-              <a href="#slider5">5</a>
-            </li>
-          </ul>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon arrow-button" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+          <span class="carousel-control-next-icon arrow-button" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       </section>
 
       <section class="row justify-content-around my-4 text-center">
