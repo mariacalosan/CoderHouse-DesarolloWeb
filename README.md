@@ -150,6 +150,54 @@ Estas son un conjunto de celdas organizadas dentro de las cuales se puede alojar
     <!--Salto de línea -->
   <br>
 ```
+# Formularios
+Los formularios son secciones donde el usuario suele tener más interacción en la página
+```html
+  <form>
+    <!--Etiqueta donde se declara que es un formulario-->
+  </form>
+```
+`Como el tema de los formularios son tan extensos, dejaré un enlace donde hay información más completa de ellos`
+https://www.w3schools.com/html/html_forms.asp
+
+# Enlaces
+Este es utilizado como medio de comunicación a páginas fuera de la nuestra o páginas propias de nuestro proyecto y hay tres tipos de enlaces
+
+## Enlaces relativos
+Estos se dirigen a páginas dentro del proyecto
+```html
+  <a href="./paginas/producto.html">Productos</a>
+```
+`Antes de seguir quiero dejar un dato muy importante, una buena manera de entrar un archivo a otro
+dos .. puntos este indica que se va a salir de la carpeta 
+un . punto indica que va a entrar en la carpeta`
+## Enlaces absolutos
+Estos se dirigen a un sitio fuera del proyecto
+```html
+  <a href="https://github.com/mariacalosan/CoderHouse-DesarolloWeb">mi github</a>
+```
+## Enlaces internos
+Estos permiten ir a partes específicas de la
+```html
+  <a href="#new">New</a>
+```
+# imagenes,videos
+```html
+  <img/>
+  <!--Para poner imagenes que den una idea mas clara de la pagina-->
+```
+```html
+  <video>
+    <!--Para poner un video-->
+  </video>
+```
+# Favicon
+Este es un pequeño icono que identifica la página de otras
+```html
+  <link rel="shortcut icon" href="./asset/iconos/letra.png" />
+```
+# semantica
+https://www.w3schools.com/html/html5_semantic_elements.asp
 
 
 
