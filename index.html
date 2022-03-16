@@ -21,75 +21,74 @@
   </head>
 
   <body>
-    <header class="container-fluid">
-      <h1 class="header_titulo">Marialipstick</h1>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="nav_label">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <ul class="nav_lista">
-          <li class="nav_items">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="nav_items">
-            <a href="#new">New</a>
-          </li>
-          <li class="nav_items">
-            <a href="./paginas/producto.html">Productos</a>
-          </li>
-          <li class="nav_items">
-            <a href="./paginas/contacto.html">Contactenos</a>
-          </li>
-          <li class="nav_items">
-            <a href="./paginas/carrito.html">
-              <img
-                src="./asset/iconos/carrito.png"
-                alt="carrito"
-                class="nav_items--img"
-              />
-            </a>
-          </li>
-        </ul>
+    <header class="container-fluid bg-blue">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-blue">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><h1 class="header_titulo">Marialipstick</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#new">New</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/producto.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/contacto.html">Contactenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/carrito.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main class="container-fluid">
-      <section class="main_section">
+      <section class="row justify-content-center bg-light-blue">
         <ul class="section_ul--slider">
           <li id="slider1">
             <img
               src="./asset/imagenes/fondo2.jpg"
               alt="labial2"
-              class="section_img"
+              class="img-fluid"
             />
           </li>
           <li id="slider2">
             <img
               src="./asset/imagenes/fondo1.jpg"
               alt="labial2"
-              class="section_img"
+              class="img-fluid"
             />
           </li>
           <li id="slider3">
             <img
               src="./asset/imagenes/fondo5.jpg"
               alt="labial2"
-              class="section_img"
+              class="img-fluid"
             />
           </li>
           <li id="slider4">
             <img
               src="./asset/imagenes/fondo.jpg"
               alt="labial2"
-              class="section_img"
+              class="img-fluid"
             />
           </li>
           <li id="slider5">
             <img
               src="./asset/imagenes/fondo6.jpg"
               alt="labial2"
-              class="section_img"
+              class="img-fluid"
             />
           </li>
         </ul>
@@ -114,10 +113,9 @@
         </div>
       </section>
 
-      <h2 id="new" class="main_h2">Productos nuevos</h2>
-
       <section class="row justify-content-around my-4 text-center">
-        <article class="col-4 col-lg-2 bg-light-blue rounded-3 p-4 m-4">
+        <h2 id="new" class="main_h2">Productos nuevos</h2>
+        <article class="col-4 col-lg-2 bg-blue rounded-3 p-4 m-4">
           <a href="./paginas/detalle.html">
             <img
               src="./asset/imagenes/new1.jpg"
@@ -127,7 +125,7 @@
           </a>
         </article>
 
-        <article class="col-4 col-lg-2 bg-light-blue rounded-3 p-4 m-4 ">
+        <article class="col-4 col-lg-2 bg-blue rounded-3 p-4 m-4 ">
           <a href="./paginas/detalle.html">
             <img
               src="./asset/imagenes/new2.jpg"
@@ -137,7 +135,7 @@
           </a>
         </article>
 
-        <article class="col-4 col-lg-2 bg-light-blue rounded-3 p-4 m-4">
+        <article class="col-4 col-lg-2 bg-blue rounded-3 p-4 m-4">
           <a href="./paginas/detalle.html">
             <img
               src="./asset/imagenes/new3.jpg"
@@ -147,7 +145,7 @@
           </a>
         </article>
 
-        <article class="col-4 col-lg-2 bg-light-blue rounded-3 p-4 m-4">
+        <article class="col-4 col-lg-2 bg-blue rounded-3 p-4 m-4">
           <a href="./paginas/detalle.html">
             <img
               src="./asset/imagenes/new4.jpg"
@@ -159,7 +157,7 @@
       </section>
     </main>
 
-    <footer class="container-fluid pb-4 pt-4 bg-light-blue">
+    <footer class="container-fluid pb-4 pt-4 bg-blue">
       <div class="row justify-content-between">
         <h3 class="col-xs-12 col-md-2 text-center">Marylipstick</h3>
         <div class="col-xs-12 col-md-2 text-center mt-4 mt-md-0 align-self-center">
