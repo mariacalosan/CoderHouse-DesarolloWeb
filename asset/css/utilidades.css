@@ -1,10 +1,92 @@
-.bg-light-blue {
-  background-color: #f1fdfd;
+/*variables*/
+:root {
+  --bg-light-blue: #f1fdfd;
+  --bg-blue: #cfecec;
+  --bg-blue-acuamarina: #52bdbd;
 }
-.bg-blue {
-  background-color: #cfecec;
+/*reset*/
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2.5px;
+  text-transform: capitalize;
+}
+/*estilos para el index*/
+header{
+  background-color: var(--bg-blue);
+}
+nav{
+  background-color: var(--bg-blue);
+}
+footer{
+  background-color: var(--bg-blue);
+}
+.nav_div--menu{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: progress;
+}
+.main_section--index{
+  background-color: var(--bg-light-blue);
+  padding: 8px;
+  text-align: center;
+}
+.div_ul--index{
+  margin-top: 1.5rem;
+  padding: 2px;
+}
+.li_img--index-carrousel{
+  text-align: center;
+}
+.button--carousel-derecho{
+  margin-left: -8px;
+  border-radius: 2px;
+}
+.button--carousel-izquierdo{
+  margin-right: -8px;
 }
 .arrow-button {
   border: 1px solid white;
-  background-color: #52bdbd;
+  border-radius: 20px;
+  background-color: var(--bg-blue-acuamarina);
+}
+.main_h2 {
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  height: 70px;
+  padding-top: 20px;
+}
+.article--index{
+  background-color: var(--bg-blue);
+}
+
+/*estilos de la pagina de productos*/
+.article--productos{
+  background-color: var(--bg-blue);
+  margin: 10px;
+  padding: 2px;
+}
+/*estilos de la pagina de detalles*/
+.main--estilos{
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+.main_img--detalles{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }

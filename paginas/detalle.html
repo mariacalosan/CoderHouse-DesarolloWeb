@@ -18,14 +18,14 @@
   </head>
 
   <body>
-    <header class="container-fluid bg-blue">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-blue">
+    <header class="container-fluid">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"><h1 class="header_titulo">Marialipstick</h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarToggler">
+          <div class="collapse navbar-collapse nav_div--menu" id="navbarToggler">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" href="../index.html">Home</a>
@@ -50,11 +50,12 @@
       </nav>
     </header>
 
-    <main class="main--detalles">
-
-        <img src="../asset/imagenes/new3.jpg" alt="labios" class="main_img--detalles"/>
-      <section class="main_section--detalles">
-          <h2 class="section_h2--detalles">labial candy</h2>
+    <main class="main--detalles container-fluid bg-light-blue main--estilos">
+      <div class="col-6 col-sm-3 p-4">
+        <img src="../asset/imagenes/new3.jpg" alt="labios" class="main_img--detalles d-block img-thumbnail"/>
+      </div>
+      <section class="main_section--detalles col mt-4">
+          <h2 class="section_h2--detalles text-center m-4">labial candy</h2>
           <p class="section_p">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
             facilis itaque dolorum in maiores distinctio, perspiciatis natus hic
