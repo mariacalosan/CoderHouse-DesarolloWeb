@@ -31,6 +31,9 @@ nav{
 footer{
   background-color: var(--bg-blue);
 }
+a{
+  text-decoration: none;
+}
 .nav_div--menu{
   text-align: center;
   margin-top: 10px;
@@ -84,9 +87,48 @@ footer{
   border-radius: 10px;
   margin-top: 8rem;
   margin-bottom: 3rem;
+  background-color: var(--bg-light-blue);
 }
 .main_img--detalles{
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 10px;
+  text-align: center;
+}
+.button--detalles{
+  margin: 10px 0 10px 0;
+  background-color: var(--bg-blue-acuamarina);
+  border: 2px solid white;
+}
+.button--texto-detalles{
+  color: black;
+  cursor: pointer;
+}
+/*estilos de la pagina de contactos*/
+.div--contactos{
+  background-color: var(--bg-light-blue);
+  margin-top: 60px;
+  border-radius: 10px
+}
+.div_img--contactos{
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  padding: 4px;
+}
+.input--nombre{
+  margin-bottom: 10px;
+  border-color: var(--bg-blue-acuamarina);
+}
+.input--correo{
+  margin-bottom: 10px;
+  border-color: var(--bg-blue-acuamarina);
+}
+.label--formulario{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.textarea--mensaje{
+  margin-bottom: 10px;
+  border-color: var(--bg-blue-acuamarina);
 }
