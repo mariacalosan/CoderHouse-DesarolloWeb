@@ -1,0 +1,40 @@
+.nav_div--menu{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: progress;
+}
+.main_section--index{
+  background-color: var(--bg-light-blue);
+  padding: 8px;
+  text-align: center;
+}
+.div_ul--index{
+  margin-top: 1.5rem;
+  padding: 2px;
+}
+.li_img--index-carrousel{
+  text-align: center;
+}
+.button--carousel-derecho{
+  margin-left: -8px;
+  border-radius: 2px;
+}
+.button--carousel-izquierdo{
+  margin-right: -8px;
+}
+.arrow-button {
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: var(--bg-blue-acuamarina);
+}
+.main_h2 {
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  height: 70px;
+  padding-top: 20px;
+}
+.article--index{
+  background-color: var(--bg-blue);
+}
