@@ -1,0 +1,83 @@
+/*importantando archivo con esyilos globales*/
+/*reseteo*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*globales*/
+html {
+  font-size: 90%; }
+
+body {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2.5px;
+  text-transform: capitalize; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer; }
+
+/*importando las variables*/
+/*variables de color*/
+/*variables para letras*/
+/*importando el header*/
+/*estilos para el slider menu despegable*/
+header {
+  background-color: #cfecec; }
+  header nav {
+    background-color: #cfecec; }
+    header nav div {
+      text-align: center;
+      margin-top: -10px; }
+      header nav div ul {
+        margin-top: 1.5rem;
+        padding: 2px; }
+      header nav div li {
+        font-size: 16px; }
+
+.header_titulo {
+  margin-top: 10px;
+  margin-left: 10px; }
+
+section {
+  background-color: #f1fdfd;
+  padding: 8px;
+  text-align: center; }
+  section ul {
+    margin-top: 1.5rem;
+    padding: 2px; }
+  section img {
+    text-align: center; }
+
+.button--carousel-derecho {
+  margin-left: -8px;
+  border-radius: 2px; }
+
+.button--carousel-izquierdo {
+  margin-right: -8px; }
+
+.arrow-button {
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: var(--bg-blue-acuamarina); }
+
+.main_h2 {
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  height: 70px;
+  padding-top: 20px; }
+
+article {
+  background-color: var(--bg-blue); }

@@ -1,0 +1,26 @@
+/*estilos para el slider menu despegable*/
+header {
+  background-color: $bg-blue;
+  nav {
+    background-color: $bg-blue;
+
+    div {
+      text-align: center;
+      margin-top: -10px;
+
+      ul {
+        margin-top: 1.5rem;
+        padding: 2px;
+      }
+
+      li {
+        font-size: $ul;
+      }
+    }
+  }
+}
+
+.header_titulo {
+  margin-top: 10px;
+  margin-left: 10px;
+}

@@ -1,5 +1,14 @@
+/*importantando archivo con esyilos globales*/
+@import './otros/normalize';
+
+/*importando las variables*/
+@import './otros/_variable.scss';
+
+/*importando el header*/
+@import './secciones_iguales/_header.scss';
+
 section {
-  background-color: var(--bg-light-blue);
+  background-color: $bg-light-blue;
   padding: 8px;
   text-align: center;
 
@@ -31,6 +40,6 @@ section {
   height: 70px;
   padding-top: 20px;
 }
-.article--index {
+article {
   background-color: var(--bg-blue);
 }
