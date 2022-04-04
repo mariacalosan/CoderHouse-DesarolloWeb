@@ -7,32 +7,13 @@
 /*importando el header*/
 @import './secciones_iguales/_header.scss';
 
-section {
-  background-color: $bg-light-blue;
-  padding: 8px;
-  text-align: center;
+/*importando el footer*/
+@import './secciones_iguales/footer';
 
-  ul {
-    margin-top: 1.5rem;
-    padding: 2px;
-  }
+/*importando la pagina del home*/
+@import './paginas/home';
 
-  img {
-    text-align: center;
-  }
-}
-.button--carousel-derecho {
-  margin-left: -8px;
-  border-radius: 2px;
-}
-.button--carousel-izquierdo {
-  margin-right: -8px;
-}
-.arrow-button {
-  border: 1px solid white;
-  border-radius: 20px;
-  background-color: var(--bg-blue-acuamarina);
-}
+/*
 .main_h2 {
   align-items: center;
   text-align: center;
@@ -43,3 +24,4 @@ section {
 article {
   background-color: var(--bg-blue);
 }
+*/

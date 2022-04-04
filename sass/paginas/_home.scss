@@ -1,0 +1,36 @@
+.main {
+  margin-bottom: 30px;
+
+  &_section--index {
+    background-color: $bg-light-blue;
+    padding: 8px;
+    text-align: center;
+  }
+}
+
+div {
+  margin-bottom: 10px;
+
+  ul {
+    margin-top: 1.5rem;
+    padding: 2px;
+
+    img {
+      text-align: center;
+    }
+  }
+}
+.button {
+  border: 10px ;
+  &--carousel-derecho {
+    margin-left: -8px;
+  }
+  &--carousel-izquierdo{
+    margin-right: -8px;
+  }
+  .arrow-button {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: $bg-blue-acuamarina
+  }
+}
