@@ -73,6 +73,8 @@ div {
     div ul img {
       text-align: center;
       object-fit: cover; }
+    div ul img:hover {
+      filter: opacity(0.9); }
 
 .button {
   border: 10px; }
@@ -99,8 +101,8 @@ h2 {
     border: 1.5px solid;
     border-color: #52bdbd; }
   .section_article--img:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3); }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
   .section_article--img {
     overflow: hidden;
     width: 200px;
@@ -141,8 +143,8 @@ h2 {
     border: 1px solid;
     border-color: #52bdbd; }
   .article_productos_img:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3); }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
 
 @media (max-width: 800px) {
   section {
