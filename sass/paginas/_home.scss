@@ -47,9 +47,9 @@ h2 {
 }
 .section {
   text-align: center;
-  &_article {
+  &_article{
     background-color: $bg-light-blue;
-    border: 1.5px solid;
+    box-shadow: 0 1px 6px 0 $bg-blue-acuamarina ;
     border-color: $bg-blue-acuamarina;
   }
   &_article--img:hover {
@@ -61,8 +61,6 @@ h2 {
     width: 200px;
     height: 300px;
     object-fit: cover;
-    border: 1px solid;
-    border-color: $bg-blue-acuamarina;
   }
 }
 @media (max-width: 800px){

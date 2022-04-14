@@ -24,3 +24,9 @@ header {
   margin-top: 10px;
   margin-left: 10px;
 }
+@media screen and (max-width: 800px){
+  .header_titulo{
+    font-size: 15px;
+    color: black;
+  }
+}
