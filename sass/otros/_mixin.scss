@@ -1,6 +1,8 @@
-@mixin h2($name){
-  align-items: center;
-  text-align: center;
+@mixin titulo{
   font-size: $tituloh2;
-  padding-top: 20px;
+}
+@mixin caja{
+  background-color: $bg-light-blue;
+  box-shadow: 0 1px 6px 0 $bg-blue-acuamarina ;
+  border-color: $bg-blue-acuamarina;
 }

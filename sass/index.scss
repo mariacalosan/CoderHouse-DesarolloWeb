@@ -1,5 +1,7 @@
 /*importantando archivo con esyilos globales*/
-@import './otros/normalize';
+@import './otros/_normalize';
+
+@import'./otros/_mixin';
 
 /*importando las variables*/
 @import './otros/_variable.scss';
@@ -13,5 +15,7 @@
 /*importando la pagina del home*/
 @import './paginas/home';
 
-/*imprtando la pagina de productos*/
+/*importando la pagina de productos*/
 @import './paginas/productos';
+
+@import'./paginas/detalles';

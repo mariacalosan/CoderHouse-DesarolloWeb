@@ -59,7 +59,7 @@ header {
 footer {
   background-color: #cfecec; }
   footer h3 {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 10px; }
 
 /*importando la pagina del home*/
@@ -96,10 +96,10 @@ div {
 h2 {
   align-items: center;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   padding-top: 20px; }
 
-.section {
+.section, h2 h3 {
   text-align: center; }
   .section_article {
     background-color: #f1fdfd;
@@ -119,7 +119,7 @@ h2 {
     height: 100px;
     width: 80px; } }
 
-/*imprtando la pagina de productos*/
+/*importando la pagina de productos*/
 section {
   margin: 50px;
   padding: 20px;
@@ -130,7 +130,7 @@ section {
 h2 {
   align-items: center;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   padding-top: 20px; }
 
 .article_productos {
@@ -160,3 +160,85 @@ h2 {
   .article_productos_img {
     height: 200px;
     width: 100px; } }
+
+.main_estilos {
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  background-color: #f1fdfd;
+  box-shadow: 0 1px 6px 0 #52bdbd;
+  border-color: #52bdbd;
+  display: flex;
+  height: 100vh; }
+  .main_estilos--div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center; }
+  .main_estilos--div--img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 30px; }
+
+.main_section--detalles {
+  margin: 60px; }
+  .main_section--detalles--h2 {
+    font-size: 30px;
+    margin: 10px;
+    animation-name: h2;
+    animation-duration: 0.5s;
+    animation-fill-mode: both; }
+    .main_section--detalles--h2--parrafo {
+      font-size: 16px; }
+
+.button--detalles {
+  margin-top: 10%;
+  background-color: #52bdbd;
+  opacity: 3;
+  border: 2px solid #f1fdfd;
+  width: 100px;
+  height: 40px; }
+
+@keyframes h2 {
+  0% {
+    letter-spacing: 4rem;
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    letter-spacing: inherit;
+    opacity: 1; } }
+
+@media (max-width: 800px) {
+  .main_estilos--div {
+    display: block;
+    margin: 10px; } }
+
+@media (max-width: 800px) {
+  .main_section--detalles {
+    margin: -10px;
+    display: block; }
+    .main_section--detalles--h2 {
+      font-size: 20px; }
+      .main_section--detalles--h2--parrafo {
+        font-size: 10px; } }
+
+@media (max-width: 800px) {
+  .main_estilos {
+    display: inline-block;
+    margin-bottom: 30%;
+    height: 80%; }
+    .main_estilos--div--img {
+      display: flex;
+      width: 200px;
+      object-fit: cover;
+      margin-bottom: -2px;
+      justify-content: center;
+      margin-top: 10px;
+      margin-left: 20%;
+      padding-top: 5px; } }

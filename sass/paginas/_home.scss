@@ -39,18 +39,22 @@ div {
     background-color: $bg-blue;
   }
 }
-h2 {
+h2{
   align-items: center;
   text-align: center;
   font-size: $tituloh2;
   padding-top: 20px;
+  h3{
+    @extend .section_h2
+  }
 }
+
 .section {
   text-align: center;
   &_article{
-    background-color: $bg-light-blue;
-    box-shadow: 0 1px 6px 0 $bg-blue-acuamarina ;
-    border-color: $bg-blue-acuamarina;
+    margin: 10px;
+    padding: 2px;
+    @include caja;
   }
   &_article--img:hover {
     -webkit-transform: scale(1.1);
