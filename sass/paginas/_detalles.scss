@@ -3,9 +3,7 @@
   border-radius: 10px;
   margin-top: 8rem;
   margin-bottom: 3rem;
-  background-color: $bg-light-blue;
-  box-shadow: 0 1px 6px 0 $bg-blue-acuamarina;
-  border-color: $bg-blue-acuamarina;
+  @include caja;
   display: flex;
   height: 100vh;
   &--div {
@@ -39,12 +37,16 @@
 }
 
 .button--detalles{
-  margin-top: 10%;
-  background-color: $bg-blue-acuamarina;
-  opacity: 3;
-  border: 2px solid $bg-light-blue;
-  width: 100px;
-  height: 40px;
+  @include boton;
+  &--texto{
+    color: black;
+    cursor: pointer;
+  }
+}
+button:active{
+  color: $bg-blue-acuamarina;
+  box-shadow: inset 4px 4px 12px $bg-blue,
+             inset -4px -4px 12px $bg-blue-acuamarina;
 }
 
 @keyframes h2 {

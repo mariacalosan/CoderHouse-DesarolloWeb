@@ -1,6 +1,5 @@
 .main {
   margin-bottom: 30px;
-
   &_section--index {
     background-color: $bg-light-blue;
     padding: 8px;
@@ -40,12 +39,11 @@ div {
   }
 }
 h2{
-  align-items: center;
-  text-align: center;
-  font-size: $tituloh2;
-  padding-top: 20px;
+  
+  @include titulo;
+
   h3{
-    @extend .section_h2
+    @extend h2;
   }
 }
 

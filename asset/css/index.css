@@ -93,15 +93,17 @@ div {
     border-color: #52bdbd;
     background-color: #cfecec; }
 
-h2 {
+h2, h2 h3 {
+  font-size: 30px;
   align-items: center;
   text-align: center;
-  font-size: 30px;
   padding-top: 20px; }
 
-.section, h2 h3 {
+.section {
   text-align: center; }
   .section_article {
+    margin: 10px;
+    padding: 2px;
     background-color: #f1fdfd;
     box-shadow: 0 1px 6px 0 #52bdbd;
     border-color: #52bdbd; }
@@ -127,10 +129,10 @@ section {
   margin-bottom: 40px;
   text-align: center; }
 
-h2 {
+h2, h2 h3 {
+  font-size: 30px;
   align-items: center;
   text-align: center;
-  font-size: 30px;
   padding-top: 20px; }
 
 .article_productos {
@@ -148,7 +150,7 @@ h2 {
     transform: scale(1.1); }
 
 @media (max-width: 900px) {
-  h2 {
+  h2, h2 h3 {
     font-size: 20px; } }
 
 @media (max-width: 800px) {
@@ -199,10 +201,22 @@ h2 {
 .button--detalles {
   margin-top: 10%;
   background-color: #52bdbd;
-  opacity: 3;
-  border: 2px solid #f1fdfd;
+  border: none;
+  font-size: 18px;
+  border-radius: 0.5em;
+  color: #cfecec;
+  border: 1px solid #52bdbd;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #cfecec, -6px -6px 12px #52bdbd;
   width: 100px;
   height: 40px; }
+  .button--detalles--texto {
+    color: black;
+    cursor: pointer; }
+
+button:active {
+  color: #52bdbd;
+  box-shadow: inset 4px 4px 12px #cfecec, inset -4px -4px 12px #52bdbd; }
 
 @keyframes h2 {
   0% {
