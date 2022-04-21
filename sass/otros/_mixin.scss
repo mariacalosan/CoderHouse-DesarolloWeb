@@ -10,16 +10,17 @@
   border-color: $bg-blue-acuamarina;
 }
 @mixin boton {
-  margin-top: 10%;
-  background-color: $bg-blue-acuamarina;
+  margin-top: 80px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  color: #000;
+  background-color: white;
   border: none;
-  font-size: 18px;
-  border-radius: 0.5em;
-  color: $bg-blue;
-  border: 1px solid $bg-blue-acuamarina;
-  transition: all .3s;
-  box-shadow: 6px 6px 12px $bg-blue,
-  -6px -6px 12px $bg-blue-acuamarina;
-  width: 100px;
-  height: 40px;
-} 
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px $bg-blue-acuamarina;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+ 

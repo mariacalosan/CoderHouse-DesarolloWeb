@@ -62,7 +62,7 @@ footer {
     font-size: 20px;
     margin-top: 10px; }
 
-/*importando la pagina del home*/
+/*importando los estilos de la pagina del home*/
 .main {
   margin-bottom: 30px; }
   .main_section--index {
@@ -121,7 +121,7 @@ h2, h2 h3 {
     height: 100px;
     width: 80px; } }
 
-/*importando la pagina de productos*/
+/*importando los estilos de la  pagina de productos*/
 section {
   margin: 50px;
   padding: 20px;
@@ -163,6 +163,7 @@ h2, h2 h3 {
     height: 200px;
     width: 100px; } }
 
+/*importando los estilos de la pagina de detalles*/
 .main_estilos {
   width: 90%;
   border-radius: 10px;
@@ -198,25 +199,30 @@ h2, h2 h3 {
     .main_section--detalles--h2--parrafo {
       font-size: 16px; }
 
-.button--detalles {
-  margin-top: 10%;
+.button--detalles:hover {
   background-color: #52bdbd;
-  border: none;
-  font-size: 18px;
-  border-radius: 0.5em;
-  color: #cfecec;
-  border: 1px solid #52bdbd;
-  transition: all .3s;
-  box-shadow: 6px 6px 12px #cfecec, -6px -6px 12px #52bdbd;
-  width: 100px;
-  height: 40px; }
-  .button--detalles--texto {
-    color: black;
-    cursor: pointer; }
+  box-shadow: 0px 15px 20px #cfecec;
+  color: white;
+  transform: translateY(-7px); }
 
-button:active {
-  color: #52bdbd;
-  box-shadow: inset 4px 4px 12px #cfecec, inset -4px -4px 12px #52bdbd; }
+.button--detalles:active {
+  transform: translateY(-1px); }
+
+.button--detalles {
+  margin-top: 80px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  color: #000;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px #52bdbd;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none; }
+  .button--detalles--texto {
+    padding: 1.3em 3em; }
 
 @keyframes h2 {
   0% {
@@ -256,3 +262,36 @@ button:active {
       margin-top: 10px;
       margin-left: 20%;
       padding-top: 5px; } }
+
+@media (max-width: 800px) {
+  .button--detalles {
+    width: 30%;
+    height: 50px; }
+    .button--detalles--texto {
+      padding: 0;
+      margin-left: -20px; } }
+
+/*importando los estilos de la pagina de contactenos*/
+.main_estilos--contacto {
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  display: flex;
+  height: 100vh;
+  background-color: #f1fdfd;
+  box-shadow: 0 1px 6px 0 #52bdbd;
+  border-color: #52bdbd; }
+  .main_estilos--contacto--div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center; }
+    .main_estilos--contacto--div--img {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      text-align: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      margin-left: 30px; }
