@@ -272,6 +272,16 @@ h2, h2 h3 {
       margin-left: -20px; } }
 
 /*importando los estilos de la pagina de contactenos*/
+.div_estilos {
+  display: flex;
+  padding: 0;
+  margin: -0; }
+  .div_estilos--img {
+    border-radius: 10px;
+    text-align: center;
+    justify-content: flex-start;
+    flex-direction: row; }
+
 .main_estilos--contacto {
   width: 90%;
   border-radius: 10px;
@@ -284,14 +294,64 @@ h2, h2 h3 {
   border-color: #52bdbd; }
   .main_estilos--contacto--div {
     display: inline-flex;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center; }
-    .main_estilos--contacto--div--img {
-      margin-top: 30px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      text-align: center;
-      justify-content: flex-start;
-      flex-direction: row;
-      margin-left: 30px; }
+    align-items: center;
+    padding: 10em;
+    margin-right: 10%;
+    justify-content: center; }
+
+.div_form {
+  justify-content: center; }
+  .div_form--input--nombre, .div_form--input--correo, .div_form--input--label, .div_form--input--textarea {
+    margin-bottom: 15px;
+    border-color: #52bdbd;
+    width: 35rem;
+    margin-left: 9em; }
+
+.button_contactos {
+  outline: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 140px;
+  height: 50px;
+  border-radius: 0.5em;
+  box-shadow: 0 0.625em 1em 0 #cfecec;
+  overflow: hidden;
+  margin-left: 22em;
+  margin-top: 30px; }
+  .button_contactos--div {
+    transform: translateY(0px);
+    width: 100%; }
+    .button_contactos--div--div {
+      transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+
+.button_contactos--div--span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0.75em 1.125em; }
+
+.button_contactos--div:nth-child(1) {
+  background-color: white; }
+
+.button_contactos--div--div:nth-child(2) {
+  background-color: #52bdbd; }
+
+.button_contactos:hover {
+  box-shadow: 0 0.625em 1em 0 #52bdbd; }
+
+.button_contactos:hover .button_contactos--div {
+  transform: translateY(-50px); }
+
+.button_contactos:hover .button_contactos--div--div {
+  transform: translateY(-50px); }
+
+.button_p {
+  font-size: 17px;
+  font-weight: bold;
+  color: black; }
+
+.button_contactos:active {
+  transform: scale(0.95); }
