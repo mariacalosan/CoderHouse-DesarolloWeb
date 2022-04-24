@@ -355,3 +355,86 @@ h2, h2 h3 {
     justify-items: end; }
   .button_form {
     margin-left: 0; } }
+
+/*importando los estilos de la pagina de carrito*/
+.main_estilos--carrito {
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  height: 100vh;
+  background-color: #f1fdfd;
+  box-shadow: 0 1px 6px 0 #52bdbd;
+  border-color: #52bdbd; }
+  .main_estilos--carrito--div {
+    display: flex;
+    flex-direction: column; }
+
+.article {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+.article2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+.article_h4 {
+  font-size: 25px; }
+
+.span_p {
+  font-size: 20px; }
+
+.input_span {
+  width: 50px;
+  margin-left: 10px; }
+
+.div_total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 15%; }
+  .div_total--h5 {
+    font-size: 20px; }
+
+.div_button_carrito:hover {
+  background-color: #52bdbd;
+  box-shadow: 0px 15px 20px #cfecec;
+  color: white;
+  transform: translateY(-7px); }
+
+.button_carrito:active {
+  transform: translateY(-1px); }
+
+.div_button {
+  display: flex;
+  justify-content: center; }
+  .div_button_carrito {
+    margin-top: 80px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    color: #000;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px #52bdbd;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    width: 10%; }
+
+@media (max-width: 800px) {
+  .article {
+    display: block; }
+  .article2 {
+    display: block; } }
+
+@media (max-width: 800px) {
+  .div_button_carrito {
+    width: 25%; } }
