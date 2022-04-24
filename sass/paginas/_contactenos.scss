@@ -19,18 +19,15 @@
       text-align: center;
       justify-content: flex-start;
       flex-direction: row;
-      margin-left: -40%;
-      width: 60%;
     }
   }
 }
 .main_estilos--contacto--div--div{
-  margin-bottom: 2rem;
-  border-radius: 10px;
   padding: 4px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 10%;
 
 }
 
@@ -69,3 +66,30 @@
   @include boton;
 }
 
+@media (max-width: 800px){
+  .div_form--input--nombre{
+    width: 60%;
+  }
+}
+@media (max-width: 800px){
+  .main_estilos--contacto--div{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &--div{
+      margin-left: -33%;
+      margin-top: 40%;
+    }
+  }
+  .main_estilos--contacto--div--img{
+    height: 30%;
+  }
+  .div_form{
+    display: grid;
+    justify-items: end;
+  }
+  .button_form{
+    margin-left: 0;
+  }
+}
